@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,27 +8,24 @@
     <link rel="icon" href="images/logo.svg">
 
     <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <!-- Bootstrap link  -->
-    <link rel="stylesheet" href="style/bootstrap.rtl.min.css">
-    <link rel="stylesheet" href="style/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles/plugin/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="styles/plugin/bootstrap-icons.min.css">
 
     <!-- fancyBox link  -->
-    <link rel="stylesheet" href="style/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" href="styles/plugin/jquery.fancybox.min.css"/>
 
     <!-- owl-carousel link -->
-    <link rel="stylesheet" href="style/owl.theme.default.min.css">
-    <link rel="stylesheet" href="style/owl.carousel.min.css">
+    <link rel="stylesheet" href="styles/plugin/owl.theme.default.min.css">
+    <link rel="stylesheet" href="styles/plugin/owl.carousel.min.css">
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="style/style.css">
-    <!-- <link rel="stylesheet" href="style/style-En.css" title="ltr"> -->
-
+    <link rel="stylesheet" href="styles/style.css">
   </head>
 
   <body>
-
     <!-- -------- loading ----------- -->
     <div id="loading">
       <div class="loader">
@@ -39,7 +36,51 @@
       href="https://wesam-sakr.github.io/Portfolio/" accesskey="w"
       target="_blank"></a>
 
-
+      <nav class="navbar top-nav">
+        <div class="container">
+          <div class="helper-pages">
+            <a href="https://backend.smartvision4p.com/sahm/public/setting/page/privacy">
+              <i class="bi bi-info-lg"></i>
+              <span>سياسة الخصوصية</span>
+            </a>
+            <a href="https://backend.smartvision4p.com/sahm/public/setting/page/help">
+              <i class="bi bi-question-lg"></i>
+              <span>المساعدة</span>
+            </a>
+          </div>
+                <!-- if auth -->
+          <ul class="icons m-0 d-flex">
+            <li>
+              <a href="https://backend.smartvision4p.com/sahm/public/user/chat">
+                <i class="bi bi-chat-dots"></i>
+                          </a>
+            </li>
+            <li>
+              <a href="https://backend.smartvision4p.com/sahm/public/user/notifications">
+                <i class="bi bi-bell"></i>
+                          </a>
+            </li>
+            <li class="top-nav-user">
+              <a href="https://backend.smartvision4p.com/sahm/public/user/profile" class="has-menu">
+                <i class="bi bi-person"></i>
+              </a>
+              <!-- <div class="sub-menu">
+              <a href="login.html">تسجيل الدخول</a>
+              <a href="register.html">انشاء حساب</a>
+              <button type="button" style="width: 100%;">تسجيل خروج</button>
+            </div> -->
+            </li>
+            <li>
+              <a onclick="$('#logout2').submit()">
+                <i class="bi bi-box-arrow-right"></i>
+                <span class="">تسجيل الخروج </span>
+              </a>
+            </li>
+            <form method="post" id="logout2" action="https://backend.smartvision4p.com/sahm/public/logout">
+                        <input type="hidden" name="_token" value="CLPqOwW21LYzjpMTFRDXnllgWQe8Bp6PdzNtJDtN">        </form>
+          </ul>
+              </div>
+      </nav>
     <!------------- nav section -------------->
     <nav class="navbar navbar-expand-lg navbar-light top-0">
       <div class="container">
