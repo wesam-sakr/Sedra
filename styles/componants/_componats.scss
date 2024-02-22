@@ -1,0 +1,30 @@
+@use "sass:math";
+/*extend*/
+%flex_center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*mixin*/
+@mixin link ($ind:1) {
+    position: absolute;
+    inset: 0;
+    z-index: $ind;
+}
+@mixin h_center ($gap:18px) {
+    display: flex;
+    align-items: center;
+    gap: $gap;
+}
+@mixin circle($size:30px,$font:14px,$color:$main,$bg:$white,$bx_sh:1){
+    @extend %flex_center;
+    width: $size;
+    height: $size;
+    color: $color;
+    background: $bg;
+    font-size: $font;
+    @if( $bx_sh == 1 ){
+        box-shadow: 0px 0px 15px #00000029;
+    }
+    border-radius: 50%;
+}
